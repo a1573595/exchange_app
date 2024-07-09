@@ -15,7 +15,13 @@ A Flutter exchange app.
 dart run build_runner build --delete-conflicting-outputs
 ```
 
-## Getting Started
+## Generate Localization
+
+```
+flutter gen-l10n
+```
+
+## Run Project
 
 ```
 flutter pub get
