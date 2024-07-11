@@ -46,12 +46,11 @@ void main() {
 
       final amountTextField = find.byType(TextFormField);
       final switchIconButton = find.byType(IconButton);
-
       expect(amountTextField, findsOneWidget);
       expect(switchIconButton, findsOneWidget);
     });
 
-    testWidgets("Exchange picker", (widgetTester) async {
+    testWidgets("Show exchange picker", (widgetTester) async {
       final list = DataSource.getExchangeList();
 
       await widgetTester.pumpWidget(buildTestWidget(
@@ -65,8 +64,8 @@ void main() {
       final inkwell = find.byType(InkWell).first;
       await widgetTester.tap(inkwell);
       await widgetTester.pump();
-      final picker = find.byType(CupertinoPicker);
 
+      final picker = find.byType(CupertinoPicker);
       expect(inkwell, findsOneWidget);
       expect(picker, findsOneWidget);
     });

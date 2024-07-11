@@ -9,7 +9,7 @@ part 'exchange.g.dart';
 @JsonSerializable()
 class Exchange with EquatableMixin, HiveObjectMixin {
   @HiveField(0)
-  @JsonKey(fromJson: stringToInt, toJson: stringFromInt)
+  @JsonKey(fromJson: stringToInt, toJson: intToString)
   final int id;
   @HiveField(1)
   final String currency;
@@ -20,7 +20,7 @@ class Exchange with EquatableMixin, HiveObjectMixin {
   @JsonKey(name: "twd_price")
   final double twdPrice;
   @HiveField(4)
-  @JsonKey(name: "amount_decimal", fromJson: stringToInt, toJson: stringFromInt)
+  @JsonKey(name: "amount_decimal", fromJson: stringToInt, toJson: intToString)
   final int amountDecimal;
 
   Exchange({

@@ -65,9 +65,9 @@ Exchange _$ExchangeFromJson(Map<String, dynamic> json) => Exchange(
     );
 
 Map<String, dynamic> _$ExchangeToJson(Exchange instance) => <String, dynamic>{
-      'id': stringFromInt(instance.id),
+      'id': intToString(instance.id),
       'currency': instance.currency,
       'currency_icon': instance.currencyIcon,
       'twd_price': instance.twdPrice,
-      'amount_decimal': stringFromInt(instance.amountDecimal),
+      'amount_decimal': intToString(instance.amountDecimal),
     };

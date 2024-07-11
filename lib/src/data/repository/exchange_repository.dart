@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:exchange_app/src/data/local/exchange_dao.dart';
 import 'package:exchange_app/src/data/local/hive_helper.dart';
 import 'package:exchange_app/src/data/model/exchange.dart';
-import 'package:exchange_app/src/data/network/api_service.dart';
+import 'package:exchange_app/src/data/network/dio_service.dart';
 import 'package:exchange_app/src/data/network/exchange_api.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
